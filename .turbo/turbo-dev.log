@@ -1,0 +1,8 @@
+
+
+> zbase@0.1.0 dev /Users/kamranwajdani/Desktop/Zuz/@zuzjs/apps/zbase
+> concurrently "zuzjs" "node zuz.js mode=dev dir=.next.dev" "next dev --turbopack -p 3001"
+
+[0m[1][0m [0mnode zuz.js mode=dev dir=.next.dev exited with code 0[0m
+[0m[2][0m [0mnext dev --turbopack -p 3001 exited with code SIGINT[0m
+[0m[0][0m [0mzuzjs exited with code SIGINT[0m

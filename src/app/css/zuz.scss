@@ -1,0 +1,104 @@
+/**
+* @file /src/app/error.jsx
+*/
+.dgbsBB{display:flex;}
+.fEXive{flex-direction:column;}
+.aRefo0{align-items:center;}
+.jQ4T9A{justify-content:center;}
+.p51uAJ{position:absolute;}
+.tybIBW{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.cObJUAV{color: #777;}
+.fdrns9Q{font-size: 50px;}
+.f8QaiEE{font-weight: 900;}
+.fXdZS1d{font-size: 24px;}
+.f5aAhOw{font-size: 30px;}
+.mzQEH07{margin-top: 20px;}
+.fB4pieP{font-size: 18px;}
+/**
+* @file /src/app/footer.jsx
+*/
+/**
+* @file /src/app/header.jsx
+*/
+.pgLpUkr{padding: 40px 5vw;}
+.poXFA4{position:relative;}
+.zLdVt1a{z-index: 99;}
+
+.hXVkiEW{height: 70px;}
+.z6Q4mY{&:hover{padding: 10px;}}
+.fqPGSJX{flex: 1;}
+.gdv5ca0{gap: 20px;}
+.wPXWTWa{width: 40px;}
+.hXkRfDE{height: 40px;}
+.bgEyTEq{border-radius: 50px;}
+.bQoyUv9{background: var(--primary);}
+.oE5FrJ{overflow: hidden;}
+.wqLluEJ{width: 45px;}
+.j1XcpW{justify-content:flex-end;}
+.tV1TpE{text-decoration:none;}
+.foeptnD{font-size: 15px;}
+.f34czo{font-weight: bold;}
+.zKERWY{&:hover{text-decoration:underline;}}
+/**
+* @file /src/app/layout.jsx
+*/
+/**
+* @file /src/app/page.jsx
+*/
+.pQorHve{padding: 25px;}
+.wPqXcWp{width: 100vw;}
+.hly9hA3{height: 100vh;}
+.fmLQu8b{font-size: 120px;}
+.fVqGFBZ{font-size: 40px;}
+.mo3dsBX{margin-top: 25px;}
+/**
+* @file /src/app/u/[[...section]]/page.jsx
+*/
+.mMaElUBq{min-height: calc(100vh - 70px);}
+/**
+* @file /src/app/u/[[...section]]/recover.jsx
+*/
+.wwmGCX8{width: 400px;}
+.gJzVTZA{gap: 12px;}
+.mOomtWE{margin-bottom: 30px;}
+.mmkwt34{margin-top: 35px;}
+/**
+* @file /src/app/u/[[...section]]/signin.jsx
+*/
+/**
+* @file /src/app/u/[[...section]]/signup.jsx
+*/
+.m1nMhQP{margin-top:35px;margin-bottom:35px;}
+/**
+* @file /src/app/wrapper.jsx
+*/
+.mG9RiNP{min-height: 100vh;}
+/**
+* @file /src/config.jsx
+*/
+/**
+* @file /src/middleware.jsx
+*/
+/**
+* @file /src/ui.jsx
+*/
+.bpAPIEM{background: var(--input);}
+.bqk2iEM{border: 0px;}
+.p9RZCMX{padding: 12px;}
+.bqLohRB{border-radius: var(--radius);}
+.cav7ubO{color: var(--text);}
+.waBbCMP{width: 100%;}
+.fwLlc7e{font-size: var(--text-size);}
+.prWourV{padding: 12px 20px;}
+.ck2ATm9{color: var(--btn-text);}
+.zKJjzK{&:hover{background: var(--primary-hover);}}
+.cMD9fJP{color: var(--primary);}
+
+
+/**
+*Extra Small Devices (Phones)
+*/
+@media screen and (max-width: 599px){
+.zxpnAY{padding: 20px;}
+.zKL5DY{padding: 10px;&:hover{padding: 20px;}}
+}

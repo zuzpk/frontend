@@ -1,0 +1,44 @@
+$vars: (
+    
+    primary: #bc2a2b,
+    primary-hover: #d73b3b,
+    radius: 8px,    
+    text-size: 16px,
+
+    password-toggle-radius: var(--radius),
+
+);
+
+$light: (
+    body: #e6eaf2,
+    text: #111,
+    btn-text: #fff,
+    input: #fff,
+    cover-bg: rgba(230,234,242,0.8),
+);
+
+$dark: (
+    body: #222,
+    text: #e6eaf2
+);
+
+body {
+
+    color-scheme: light dark;
+
+    @each $name, $value in $vars{
+        --#{$name}: #{$value};
+    }
+
+    
+    @each $name, $value in $light {
+        --#{$name}: #{$value};
+    }   
+    
+    &.dark{
+        @each $name, $value in $dark {
+            --#{$name}: #{$value};
+        }
+    }
+
+}
