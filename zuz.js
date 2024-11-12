@@ -25,6 +25,9 @@ const nextConfig = {
                 hostname: "*"
             }
         ]
+    },
+    sassOptions: {
+        silenceDeprecations: ['legacy-js-api'],
     }
 }
 module.exports = nextConfig`;

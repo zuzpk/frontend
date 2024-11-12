@@ -1,7 +1,7 @@
-@import "./props.scss";
-@import "./fonts.scss";
-@import "./theme.scss";
-@import "./zuz.scss";
+@use "./props.scss";
+@use "./fonts.scss";
+@use "./theme.scss";
+@use "./zuz.scss";
 
 *, body{font-family: "Roboto", sans-serif !important;}
 html,

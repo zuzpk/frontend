@@ -13,6 +13,8 @@
 # testing
 /coverage
 
+/.turbo/
+
 # next.js
 /.next/
 /.next.dev/
