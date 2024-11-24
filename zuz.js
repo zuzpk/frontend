@@ -1,4 +1,4 @@
-const API_URL = `http://cms.zuz.com.pk/@/`
+const API_URL = "http://localhost:3001/@/"
 const fs = require('fs');
 
 const buildConf = () => {

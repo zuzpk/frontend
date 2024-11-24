@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     rewrites: () => [
-        { source: "/@/:method*/:action*", destination: "http://cms.zuz.com.pk/@/:method*/:action*" },
-        { source: "/@/:method*", destination: "http://cms.zuz.com.pk/@/:method*" }
+        { source: "/@/:method*/:action*", destination: "http://localhost:3001/@/:method*/:action*" },
+        { source: "/@/:method*", destination: "http://localhost:3001/@/:method*" }
     ],
     reactStrictMode: false,
     distDir: ".next.dev",

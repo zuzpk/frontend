@@ -20,10 +20,12 @@ const Main = ({ children }) => {
 
   const { Provider } = createStore(`app`, {
     version: 1.1,
-    debug: true
+    debug: true,
+    token: null
   })
   const { Provider: UserProvider } = createStore(`user`, {
-    ID: -1
+    loading: true,
+    ID: null
   })
 
   useEffect(() => {

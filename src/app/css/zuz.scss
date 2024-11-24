@@ -1,16 +1,27 @@
 /**
-* @file /src/app/error.jsx
+* @file /src/app/done.jsx
 */
+.wbzkHNJ{width: 500px;}
+.pGpbI38{padding: 20px;}
+.bqLohRB{border-radius: var(--radius);}
 .dgbsBB{display:flex;}
-.fEXive{flex-direction:column;}
 .aRefo0{align-items:center;}
 .jQ4T9A{justify-content:center;}
+.fEXive{flex-direction:column;}
+.fdrns9Q{font-size: 50px;}
+.mbaBtOg{margin-bottom: 25px;}
+.cXE0UEj{color: var(--red-800);}
+.c4krskq{color: var(--green-700);}
+.fXdZS1d{font-size: 24px;}
+.f34czo{font-weight: bold;}
+.fXdNIDg{font-size: 16px;}
+/**
+* @file /src/app/error.jsx
+*/
 .p51uAJ{position:absolute;}
 .tybIBW{top: 50%;left: 50%;transform: translate(-50%, -50%);}
 .cObJUAV{color: #777;}
-.fdrns9Q{font-size: 50px;}
 .f8QaiEE{font-weight: 900;}
-.fXdZS1d{font-size: 24px;}
 .f5aAhOw{font-size: 30px;}
 .mzQEH07{margin-top: 20px;}
 .fB4pieP{font-size: 18px;}
@@ -32,12 +43,11 @@
 .hXkRfDE{height: 40px;}
 .bgEyTEq{border-radius: 50px;}
 .bQoyUv9{background: var(--primary);}
-.oE5FrJ{overflow: hidden;}
+.o2JfPV{overflow: hidden;}
 .wqLluEJ{width: 45px;}
 .j1XcpW{justify-content:flex-end;}
-.tV1TpE{text-decoration:none;}
 .foeptnD{font-size: 15px;}
-.f34czo{font-weight: bold;}
+.tV1TpE{text-decoration:none;}
 .zKERWY{&:hover{text-decoration:underline;}}
 /**
 * @file /src/app/layout.jsx
@@ -52,23 +62,34 @@
 .fVqGFBZ{font-size: 40px;}
 .mo3dsBX{margin-top: 25px;}
 /**
-* @file /src/app/u/[[...section]]/page.jsx
+* @file /src/app/u/recover/page.jsx
 */
 .mMaElUBq{min-height: calc(100vh - 70px);}
-/**
-* @file /src/app/u/[[...section]]/recover.jsx
-*/
 .wwmGCX8{width: 400px;}
 .gJzVTZA{gap: 12px;}
 .mOomtWE{margin-bottom: 30px;}
 .mmkwt34{margin-top: 35px;}
 /**
-* @file /src/app/u/[[...section]]/signin.jsx
+* @file /src/app/u/recover/update/page.jsx
+*/
+.mEZG9BClB{min-height: calc(100vh - 150px);}
+/**
+* @file /src/app/u/recover/verify/[[...token]]/page.jsx
+*/
+.wl4RFqE{width: 350px;}
+.mNzbFwb{margin-bottom: 10px;}
+.t7Vid5{text-align: center;}
+.f8vrTmX{font-size: 40px !important;}
+/**
+* @file /src/app/u/signin/page.jsx
 */
 /**
-* @file /src/app/u/[[...section]]/signup.jsx
+* @file /src/app/u/signup/page.jsx
 */
 .m1nMhQP{margin-top:35px;margin-bottom:35px;}
+/**
+* @file /src/app/u/verify/[[...token]]/page.jsx
+*/
 /**
 * @file /src/app/wrapper.jsx
 */
@@ -85,7 +106,6 @@
 .bpAPIEM{background: var(--input);}
 .bqk2iEM{border: 0px;}
 .p9RZCMX{padding: 12px;}
-.bqLohRB{border-radius: var(--radius);}
 .cav7ubO{color: var(--text);}
 .waBbCMP{width: 100%;}
 .fwLlc7e{font-size: var(--text-size);}

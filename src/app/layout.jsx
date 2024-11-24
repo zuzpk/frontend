@@ -8,7 +8,8 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://icons.zuzcdn.net" />
+        <link rel="preconnect" href="https://fonts.zuzcdn.net" />
+        <link rel="stylesheet" href="https://fonts.zuzcdn.net/public/wj0HGfqhv/style.css" />
       </head>
       <body>
         <Wrapper>{children}</Wrapper>        
