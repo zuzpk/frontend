@@ -1,4 +1,3 @@
-const API_URL = "http://localhost:3001/@/"
 const fs = require('fs');
 
 const buildConf = () => {
@@ -8,10 +7,7 @@ const [ d, distDir, bistDir ] = process.argv.find(v => v.indexOf('dir=') > -1).s
 
 return `/** @type {import('next').NextConfig} */
 const nextConfig = {
-    rewrites: () => [
-        { source: "/@/:method*/:action*", destination: "${API_URL}:method*/:action*" },
-        { source: "/@/:method*", destination: "${API_URL}:method*" }
-    ],
+    rewrites: () => [],
     reactStrictMode: false,
     distDir: "${bistDir || distDir || `.next`}",
     cleanDistDir: true,

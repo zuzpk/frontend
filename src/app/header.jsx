@@ -1,7 +1,7 @@
 import { oauth } from '@/actions/funs';
 import { API_URL, APP_NAME, SESS_KEYS, SESS_PREFIX } from '@/config';
 import { useStore } from '@zuzjs/store';
-import { Box, Button, Cover, css, Image, Sheet, Size, Spinner, Text, useMounted, withPost } from '@zuzjs/ui';
+import { Box, Button, compare, Cover, css, Image, Sheet, Size, Spinner, Text, useMounted, withPost } from '@zuzjs/ui';
 import Cookies from 'js-cookie';
 import Link from 'next/link';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
@@ -17,6 +17,19 @@ const Header = (props) => {
         const _me = oauth()
         if ( _me.ID ){
             me.dispatch({ loading: false, ..._me })
+            withPost(
+                `${API_URL}u/o-auth`,
+                {}
+            )
+            .then(resp => {
+                if ( !compare( _me, resp.u ) ){
+                    me.dispatch({ loading: false, ...resp.u })
+                    Cookies.set(`${SESS_PREFIX}ud`, JSON.stringify(resp.u), { expires: 90 })
+                }
+            })
+            .catch(err => {
+                me.dispatch({ loading: false, ID: null })
+            })
         }
         else{
             me.dispatch({ loading: false })

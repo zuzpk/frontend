@@ -1,17 +1,18 @@
 {
-  "name": "zbase",
-  "version": "0.1.5",
+  "name": "frontend",
+  "version": "0.1.6",
   "private": true,
   "scripts": {
     "dev": "concurrently \"zuzjs\" \"node zuz.js mode=dev dir=.next.dev\" \"next dev -p 3000\"",
     "build": "node zuz.js mode=prod dir=.next.build && next build",
     "start": "next start -p 3000",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky"
   },
   "dependencies": {
-    "@zuzjs/store": "workspace:*",
-    "@zuzjs/ui": "workspace:*",
-    "next": "15.0.2",
+    "@zuzjs/store": "0.1.4",
+    "@zuzjs/ui": "0.6.2",
+    "next": "15.0.3",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028"
   },

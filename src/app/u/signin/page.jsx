@@ -1,5 +1,5 @@
 "use client"
-import { APP_NAME, REDIRECT_AFTER_OAUTH, SESS_PREFIX } from '@/config';
+import { API_URL, APP_NAME, REDIRECT_AFTER_OAUTH, SESS_PREFIX } from '@/config';
 import Style from '@/ui';
 import { useStore } from '@zuzjs/store';
 import { Box, Button, css, Form, FORMVALIDATION, Input, Password, Text, TRANSITION_CURVES, TRANSITIONS, useMounted } from '@zuzjs/ui';
@@ -32,7 +32,7 @@ const Signin = (props) => {
     return <Box as={`minH:calc[100vh - 70px] flex aic jcc`}>
         <Form 
             name={`signin`}
-            action={`/@/u/signin`}
+            action={`${API_URL}u/signin`}
             onSuccess={onSuccess}
             errors={{
                 em: `Valid email is required`,
