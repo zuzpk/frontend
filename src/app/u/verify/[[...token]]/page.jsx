@@ -32,7 +32,7 @@ const Verify = (props) => {
 
     const autoVerify = () => {
         withPost(
-            `${API_URL}u/verify`,
+            `/@/u/verify`,
             { token }
         )
         .then(onSuccess)
@@ -70,7 +70,7 @@ const Verify = (props) => {
             }}
             name={`verify`}
             onSuccess={onSuccess}
-            action={`${API_URL}u/verify`}
+            action={`/@/u/verify`}
             errors={{
                 otp: `OTP Code is required`,
             }}

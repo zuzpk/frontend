@@ -38,7 +38,7 @@ const Update = (props) => {
             message={`Your password is updated. Go Sign in`} /> 
         : <Form 
             name={`recoverupdate`}
-            action={`${API_URL}u/recover-update`}
+            action={`/@/u/recover-update`}
             onSuccess={onSuccess}
             errors={{
                 passw: `New Password is required`,

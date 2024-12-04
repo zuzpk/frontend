@@ -39,7 +39,7 @@ const Signup = (props) => {
     return <Box as={`minH:calc[100vh - 70px] flex aic jcc`}>
         <Form 
             name={`signup`}
-            action={`${API_URL}u/signup`}
+            action={`/@/u/signup`}
             onSuccess={onSuccess}
             errors={{
                 nm: `Name is required`,

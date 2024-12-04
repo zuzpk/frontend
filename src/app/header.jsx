@@ -68,7 +68,6 @@ const Header = (props) => {
             <Box as={`nav flex aic flex:1 gap:20`}>
                 {[
                     { label: `Home`, href: `/` },
-                    { label: `Components`, href: `/comps` },
                 ].map(n => <Link key={`nav-${n.label.replace(/\s+/g, `-`).toLowerCase()}`} href={n.href} className={css(`tdn s:15 bold`)}>{n.label}</Link>)}
             </Box>
             <Box as={`logo flex aic jcc flex:1`}>

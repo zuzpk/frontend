@@ -32,7 +32,7 @@ const Signin = (props) => {
     return <Box as={`minH:calc[100vh - 70px] flex aic jcc`}>
         <Form 
             name={`signin`}
-            action={`${API_URL}u/signin`}
+            action={`/@/u/signin`}
             onSuccess={onSuccess}
             errors={{
                 em: `Valid email is required`,

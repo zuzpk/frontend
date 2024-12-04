@@ -1,10 +1,10 @@
 "use client"
 import { useEffect, useMemo } from "react"
-// import { Provider } from "@zuzjs/store"
-import { Box } from "@zuzjs/ui";
+import { Box, CookiesConsent } from "@zuzjs/ui";
 import "@zuzjs/ui/styles";
 import Header from "./header";
 import createStore from "@zuzjs/store";
+import { APP_VERSION } from "@/config";
 
 const Wrapper = ({ children }) => {
 
@@ -19,7 +19,7 @@ const Wrapper = ({ children }) => {
 const Main = ({ children }) => {
 
   const { Provider } = createStore(`app`, {
-    version: 1.1,
+    version: APP_VERSION,
     debug: true,
     token: null
   })
@@ -39,6 +39,7 @@ const Main = ({ children }) => {
         <Header />
         {children}
       </Box>
+      <CookiesConsent />
     </UserProvider>
   </Provider>
 

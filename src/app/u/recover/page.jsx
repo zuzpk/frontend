@@ -27,7 +27,7 @@ const Recover = (props) => {
     return <Box as={`minH:calc[100vh - 70px] flex aic jcc`}>
         <Form 
             name={`recover`}
-            action={`${API_URL}u/recover`}
+            action={`/@/u/recover`}
             onSuccess={onSuccess}
             errors={{
                 em: `Valid email is required`,
