@@ -2,7 +2,7 @@
 import { API_URL, APP_NAME, REDIRECT_AFTER_OAUTH, SESS_PREFIX } from '@/config';
 import Style from '@/ui';
 import { useStore } from '@zuzjs/store';
-import { Box, Button, css, Form, FORMVALIDATION, Input, Password, Text, TRANSITION_CURVES, TRANSITIONS, useMounted } from '@zuzjs/ui';
+import { Box, Button, css, Form, FORMVALIDATION, Input, Password, Size, Text, TRANSITION_CURVES, TRANSITIONS, useMounted } from '@zuzjs/ui';
 import Cookies from 'js-cookie';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -42,10 +42,10 @@ const Signin = (props) => {
             
             <Text animate={{ ...anim, delay: 0.1 }} as={`s:30 b:900 mb:30`}>Signin to {APP_NAME}</Text>
 
-            <Input name={`em`} as={Style.Input} placeholder={`Email`} animate={{ ...anim, delay: 0.1 }} required with={FORMVALIDATION.Email} />
-            <Password name={`psw`} as={Style.Input} placeholder={`Password`} animate={{ ...anim, delay: 0.2 }} required />
+            <Input size={Size.Small} name={`em`} placeholder={`Email`} animate={{ ...anim, delay: 0.1 }} required with={FORMVALIDATION.Email} />
+            <Password size={Size.Small} name={`psw`} placeholder={`Password`} animate={{ ...anim, delay: 0.2 }} required />
             
-            <Button type={`submit`} as={`${Style.Button} mt:25`} animate={{ ...anim, delay: 0.35 }}>Sign in</Button>
+            <Button size={Size.Small} type={`submit`} as={`w:100%! mt:25`} animate={{ ...anim, delay: 0.35 }}>Sign in</Button>
 
             <Text as={`mt:35`} animate={{ ...anim, delay: 0.4 }}><Link className={css(`${Style.Link} bold`)} href={`/u/recover`}>Forgot Password?</Link></Text>
             <Text animate={{ ...anim, delay: 0.45 }}>New here? <Link className={css(`${Style.Link} bold`)} href={`/u/signup`}>Create account</Link></Text>

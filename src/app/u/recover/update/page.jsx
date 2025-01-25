@@ -3,7 +3,7 @@ import Done from '@/app/done';
 import { API_URL, APP_NAME } from '@/config';
 import Style from '@/ui';
 import { useStore } from '@zuzjs/store';
-import { Box, Button, css, Form, FORMVALIDATION, Input, Password, Text, TRANSITION_CURVES, TRANSITIONS, useMounted } from '@zuzjs/ui';
+import { Box, Button, css, Form, FORMVALIDATION, Input, Password, Size, Text, TRANSITION_CURVES, TRANSITIONS, useMounted } from '@zuzjs/ui';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useMemo, useState } from 'react';
@@ -49,10 +49,10 @@ const Update = (props) => {
             
             <Text animate={{ ...anim, delay: 0.1 }} as={`s:30 b:900 mb:30`}>New Password</Text>
 
-            <Password name={`passw`} as={Style.Input} placeholder={`New Password`} animate={{ ...anim, delay: 0.2 }} required />
-            <Password name={`repassw`} as={Style.Input} placeholder={`Repeat Password`} animate={{ ...anim, delay: 0.2 }} required with={`match@passw`} />
+            <Password size={Size.Small} name={`passw`} placeholder={`New Password`} animate={{ ...anim, delay: 0.2 }} required />
+            <Password size={Size.Small} name={`repassw`} placeholder={`Repeat Password`} animate={{ ...anim, delay: 0.2 }} required with={`match@passw`} />
 
-            <Button type={`submit`} as={`${Style.Button} mt:25`} animate={{ ...anim, delay: 0.35 }}>Continue</Button>
+            <Button size={Size.Small} type={`submit`} as={`mt:25`} animate={{ ...anim, delay: 0.35 }}>Continue</Button>
 
         </Form>}
     </Box>

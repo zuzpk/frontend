@@ -17,8 +17,8 @@ const Page = () => {
   }, [])
 
   return <Box as={`dashboard p:25 flex aic jcc w:100vw h:100vh cols abs abc`}>
-    <Text as={`flex s:120 b:900`}>ZuzCMS</Text>
-    <Text as={`flex s:40`}>ZuzJS Boilerplate</Text>
+    <Text as={`flex s:50 b:900`}>ZuzJS Boilerplate</Text>
+    <Text as={`flex s:30`}>built with @zuzjs/ui</Text>
     <TextWheel value={_version} as={`flex s:50 b:900 mt:25`} />
   </Box>
 }

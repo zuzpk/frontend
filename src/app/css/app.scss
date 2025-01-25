@@ -49,3 +49,18 @@ nextjs-portal {
     }
   }
 }
+
+.light .header{
+  --segmented: #dbe0eb;
+  --segment-tab: #fff;
+  ---segmented-border: 0px;
+  --segment-item-color: #9ca2ad;
+  --segment-item-active-color: #111;
+}
+.dark .header{
+  --segmented: #333333;
+  --segment-tab: #4d4d4d;
+  --segmented-border: 0px;
+  --segment-item-color: #a1a1a1;
+  --segment-item-active-color: #fff;
+}

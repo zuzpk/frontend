@@ -1,7 +1,7 @@
 import { oauth } from '@/actions/funs';
 import { API_URL, APP_NAME, SESS_KEYS, SESS_PREFIX } from '@/config';
 import { useStore } from '@zuzjs/store';
-import { Box, Button, compare, Cover, css, Image, Sheet, Size, Spinner, Text, useMounted, withPost } from '@zuzjs/ui';
+import { Box, Button, compare, Cover, css, Image, Sheet, Size, Spinner, Text, useMounted, withPost, ColorScheme } from '@zuzjs/ui';
 import Cookies from 'js-cookie';
 import Link from 'next/link';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
@@ -82,6 +82,7 @@ const Header = (props) => {
                 </Box>
             </Box>            
             <Box as={`you flex aic jce flex:1 gap:20`}>
+                <ColorScheme />
                 { me.loading ? <Spinner size={Size.Small} /> : me.ID ? <>
                     <Text as={`s:15 bold`}>Hi, {me.nm}</Text>
                     <Button onClick={signMeOut} as={`tdn btn link s:15 bold &hover(tdu)`}>Sign out</Button>

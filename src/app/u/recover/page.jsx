@@ -1,7 +1,7 @@
 "use client"
 import { API_URL, APP_NAME } from '@/config';
 import Style from '@/ui';
-import { Box, Button, css, Form, FORMVALIDATION, Input, Text, TRANSITION_CURVES, TRANSITIONS, useMounted } from '@zuzjs/ui';
+import { Box, Button, css, Form, FORMVALIDATION, Input, Size, Text, TRANSITION_CURVES, TRANSITIONS, useMounted } from '@zuzjs/ui';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useMemo } from 'react';
@@ -36,9 +36,9 @@ const Recover = (props) => {
             
             <Text animate={{ ...anim, delay: 0.1 }} as={`s:30 b:900 mb:30`}>Recover {APP_NAME} Account</Text>
 
-            <Input name={`em`} as={Style.Input} placeholder={`Email`} animate={{ ...anim, delay: 0.1 }} required with={FORMVALIDATION.Email} />
+            <Input size={Size.Small} name={`em`} placeholder={`Email`} animate={{ ...anim, delay: 0.1 }} required with={FORMVALIDATION.Email} />
             
-            <Button type={`submit`} as={`${Style.Button} mt:25`} animate={{ ...anim, delay: 0.35 }}>Continue</Button>
+            <Button size={Size.Small} type={`submit`} as={`mt:25 w:100%!`} animate={{ ...anim, delay: 0.35 }}>Continue</Button>
 
             <Text as={`mt:35`} animate={{ ...anim, delay: 0.45 }}>Already have an account? <Link className={css(`${Style.Link} bold`)} href={`/u/signin`}>Sign in here</Link></Text>
             <Text animate={{ ...anim, delay: 0.45 }}>New here? <Link className={css(`${Style.Link} bold`)} href={`/u/signup`}>Create account</Link></Text>

@@ -4,7 +4,7 @@ import Error from '@/app/error';
 import { API_URL, APP_NAME, SESS_PREFIX } from '@/config';
 import Style from '@/ui';
 import { useStore } from '@zuzjs/store';
-import { Box, Button, Cover, css, Form, FORMVALIDATION, Input, Password, PinInput, Sheet, Text, TRANSITION_CURVES, TRANSITIONS, useMounted, withPost } from '@zuzjs/ui';
+import { Box, Button, Cover, css, Form, FORMVALIDATION, Input, Password, PinInput, Sheet, Size, Text, TRANSITION_CURVES, TRANSITIONS, useMounted, withPost } from '@zuzjs/ui';
 import Cookies from 'js-cookie';
 import Link from 'next/link';
 import { redirect, useParams, useRouter } from 'next/navigation';
@@ -80,9 +80,9 @@ const Sent = (props) => {
             
             <Text animate={{ ...anim, delay: 0.1 }} as={`s:18 mb:10 tac`}>We have sent you a verification code{em ? <> to <b>{decodeURIComponent(em)}</b></> : null}</Text>
 
-            <PinInput name={`otp`} as={`${Style.Input} s:40! b:900`} animate={{ ...anim, delay: 0.25 }} size={6} required />
+            <PinInput name={`otp`} as={`s:40! b:900`} animate={{ ...anim, delay: 0.25 }} size={6} required />
             
-            <Button type={`submit`} as={`${Style.Button} mt:25`} animate={{ ...anim, delay: 0.35 }}>Verify</Button>
+            <Button size={Size.Small} type={`submit`} as={`mt:25`} animate={{ ...anim, delay: 0.35 }}>Verify</Button>
 
             { resend && <Box as={`mt:25 s:16`} animate={{ ...anim, delay: 0.4 }}>Code not received? <Link href={`/u/recover?resend=1`} className={Style.Link}>Re-send code</Link></Box> }
 

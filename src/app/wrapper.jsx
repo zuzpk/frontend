@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useMemo } from "react"
-import { Box, CookiesConsent } from "@zuzjs/ui";
+import { Box, CookiesConsent, NetworkStatus, useColorScheme } from "@zuzjs/ui";
 import "@zuzjs/ui/styles";
 import Header from "./header";
 import createStore from "@zuzjs/store";
@@ -8,8 +8,13 @@ import { APP_VERSION } from "@/config";
 
 const Wrapper = ({ children }) => {
 
+  const { colorScheme } = useColorScheme()
+  
   useEffect(() => {
-        
+    
+    document.body.classList.remove(`dark`, `light`)
+    document.body.classList.add(colorScheme)
+
   }, []);
 
   return <Main children={children} />
@@ -40,6 +45,7 @@ const Main = ({ children }) => {
         {children}
       </Box>
       <CookiesConsent />
+      <NetworkStatus />
     </UserProvider>
   </Provider>
 
